@@ -1,16 +1,16 @@
 import { Link } from 'react-router-dom';
 
 
-const NotFoundPage = () => {
+const UnauthorizedPage = () => {
     return (
         <div className="container">
             <div className="row">
                 <div className="col-md-12 text-center">
                     <span className="display-1">
-                        404
+                        401
                     </span>
                     <div className="mb-4 lead">
-                        Oops! We can't seem to find the page you are looking for.
+                        Unauthorized! Access to this resource is denied.
                     </div>
 
                     <Link to="/home" className="btn btn-link">
@@ -22,4 +22,4 @@ const NotFoundPage = () => {
     );
 };
 
-export {NotFoundPage};
+export {UnauthorizedPage};

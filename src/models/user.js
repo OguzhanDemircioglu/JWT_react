@@ -1,12 +1,10 @@
 export default class User {
-    constructor(name, email, password,role,token,id) {
+    constructor(username, password, name, role, token, id) {
+        this.username = username;
+        this.password= password;
         this.name = name;
-        this.email = email;
-        this.password = password;
         this.role = role;
         this.token = token;
         this.id = id;
-    }   
-
+    }
 }
-export const user = new User("", "", "");
